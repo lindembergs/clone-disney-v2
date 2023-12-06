@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  border: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  color: #8d96a7;
+  font-family: "Roboto Condensed", Calibri, Arial, sans-serif;
+  font-size: 0.96rem;
+  font-weight: 300;
+  /* background-image: url("../img/gradiente\ background.png"),
+    url("../img/Imagem\ Background.jpg");
+
+  background-size: contain, contain;
+  background-repeat: no-repeat; */
+}
+
+.bg {
+  background-image: url("../img/gradiente\ background.png"),
+    url("../img/Imagem\ Background.jpg");
+  background-size: contain, contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
