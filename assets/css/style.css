@@ -49,3 +49,7 @@ body {
 .nav-bar ul li {
   list-style: none;
 }
+
+.elemental {
+  margin: 75px 0px 0px 40px;
+}
