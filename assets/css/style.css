@@ -114,9 +114,12 @@ main {
   height: 49px;
   margin-top: 40px;
 }
+.progress {
+  margin-top: 30px;
+}
 
 .progress-bar {
-  width: 180px;
+  width: 199px;
   background-color: #ddd;
   height: 5px;
   border-radius: 5px;
@@ -131,7 +134,16 @@ main {
 }
 
 .progress p {
-  transform: translate(190px, -14px);
+  transform: translate(209px, -14px);
   font-size: 13px;
   font-weight: 100;
+}
+
+.article {
+  width: 95%;
+  font-size: 15.36px;
+  line-height: 32.13px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-family: "poppins";
 }
