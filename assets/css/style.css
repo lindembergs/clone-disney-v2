@@ -40,16 +40,42 @@ body {
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  margin-left: -60px;
 }
 .nav-bar ul {
   display: flex;
-  gap: 30px;
+
+  gap: 25px;
 }
 
 .nav-bar ul li {
   list-style: none;
 }
+.nav-bar ul li a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
 
+  font-size: 14.33px;
+  line-height: 21.49px;
+}
+.span-hidden {
+  display: none;
+}
+.more-hidden {
+  display: none;
+}
+.more {
+  display: none;
+}
+.more ul {
+  display: block;
+  margin-bottom: 5px;
+}
+.more a {
+  margin-bottom: 5px;
+}
 .elemental {
   margin: 75px 0px 0px 40px;
 }
