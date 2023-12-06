@@ -146,4 +146,39 @@ main {
   letter-spacing: 2px;
   font-weight: 300;
   font-family: "poppins";
+  margin-bottom: 70px;
+}
+
+.suggest-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 600;
+  font-size: 20.85px;
+  line-height: 31.2px;
+  letter-spacing: 4%;
+}
+
+.suggest-bar-toggle {
+  width: 140px;
+  background-color: #ddd;
+  height: 3px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.linha {
+  border: 1.5px solid #fff;
+  margin-bottom: 25px;
+}
+
+.carousel img {
+  height: 100%;
+  width: 180px;
+}
+.carousel ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
