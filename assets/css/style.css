@@ -15,6 +15,7 @@ body {
   color: #8d96a7;
   font-size: 0.96rem;
   font-weight: 300;
+  color: rgba(249, 249, 249, 0.98);
   /* background-image: url("../img/gradiente\ background.png"),
     url("../img/Imagem\ Background.jpg");
 
@@ -96,5 +97,41 @@ main {
   gap: 3px;
 }
 
-.descricao li {
+.descricao p {
+  font-size: 11.95px;
+  line-height: 17.93px;
+  letter-spacing: 5%;
+}
+
+.duracao {
+  margin-left: 15px;
+}
+
+.play {
+  display: flex;
+  justify-content: space-between;
+  width: 227px;
+  height: 49px;
+  margin-top: 40px;
+}
+
+.progress-bar {
+  width: 180px;
+  background-color: #ddd;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.progress-background {
+  width: 8vw;
+  height: 100%;
+  background-color: #0970c5;
+  border-radius: 5px;
+}
+
+.progress p {
+  transform: translate(190px, -14px);
+  font-size: 13px;
+  font-weight: 100;
 }
