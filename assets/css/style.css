@@ -202,6 +202,58 @@ footer {
 
 @media only screen and (max-width: 428px) {
   .bg {
-    margin-bottom: -35px;
+    margin-bottom: -46px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg {
+    background-size: cover, 100%;
+    height: 450px;
+  }
+
+  .elemental-img img {
+    height: 160px;
+    width: 285px;
+  }
+  .descricao {
+    margin-top: -30px;
+  }
+  .suggest-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    font-weight: 600;
+    font-size: 20.85px;
+    line-height: 31.2px;
+    letter-spacing: 4%;
+    gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bg {
+    height: 800px;
+  }
+
+  .nav-bar {
+    margin-top: 10px;
+    margin-left: -580px;
+  }
+  .span-hidden {
+    display: flex;
+    align-items: center;
+  }
+  .hamburguer img {
+    display: none;
+  }
+  .more {
+    display: flex;
+  }
+  .more ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
