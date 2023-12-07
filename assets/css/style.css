@@ -61,21 +61,25 @@ body {
   font-size: 14.33px;
   line-height: 21.49px;
 }
+.display-none {
+  display: none;
+}
 .span-hidden {
   display: none;
 }
 .more-hidden {
   display: none;
 }
-.more {
-  display: none;
-}
+
 .more ul {
   display: block;
   margin-bottom: 5px;
 }
 .more a {
   margin-bottom: 5px;
+}
+.hamburguer {
+  cursor: pointer;
 }
 .elemental {
   margin: 75px 0px 0px 35px;
