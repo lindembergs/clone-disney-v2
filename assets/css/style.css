@@ -25,15 +25,16 @@ body {
 .bg-img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   z-index: -1;
   position: absolute;
 }
 
 .bg {
   position: relative;
-  /* background-image: url("../img/gradiente\ background.png"),
-    url("../img/Imagem\ Background.jpg"); */
-  /* background-size: cover; */
+  background-image: url("../img/gradiente\ background.png"),
+    url("../img/Imagem\ Background.jpg");
+  background-size: contain, contain;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
@@ -45,6 +46,10 @@ body {
   align-items: center;
   height: 80px;
   padding-inline: 15px;
+}
+header .logo-header {
+  width: 63px;
+  height: 38px;
 }
 .nav-bar {
   display: flex;
@@ -90,7 +95,12 @@ body {
   cursor: pointer;
 }
 .elemental {
-  margin: 75px 0px 0px 35px;
+  margin: 75px 0px 0px 20px;
+}
+.elemental-img img {
+  width: 150.5px;
+  height: 84.66px;
+  margin-top: -17px;
 }
 .bg-fill {
   height: 20px;
@@ -106,7 +116,7 @@ main {
 }
 
 .principal {
-  margin: 0px 0px 0px 35px;
+  margin: 0px 0px 0px 30px;
 }
 
 .descricao ul {
@@ -117,9 +127,28 @@ main {
 }
 
 .descricao p {
-  font-size: 11.95px;
-  line-height: 17.93px;
-  letter-spacing: 5%;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: rgba(249, 249, 249, 0.98);
+}
+.descricao .date-hour {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.descricao h4 {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
 }
 
 .duracao {
@@ -132,6 +161,7 @@ main {
   width: 227px;
   height: 49px;
   margin-top: 40px;
+  border-radius: 2.38px;
 }
 .progress {
   margin-top: 30px;
@@ -154,17 +184,22 @@ main {
 
 .progress p {
   transform: translate(209px, -14px);
+  font-family: Poppins;
   font-size: 13px;
-  font-weight: 100;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .article {
-  width: 90%;
-  font-size: 15.36px;
-  line-height: 32.13px;
-  letter-spacing: 2px;
+  width: 342.96px;
+  height: 191px;
+  font-family: Poppins;
+  font-size: 15px;
   font-weight: 300;
-  font-family: "poppins";
+  line-height: 32px;
+  letter-spacing: 0.07em;
   margin-bottom: 70px;
   word-wrap: break-word;
 }
@@ -196,7 +231,9 @@ main {
 
 .carousel img {
   height: 100%;
-  width: 157px;
+  width: 166px;
+  height: 93.38px;
+  border-radius: 1.85px;
 }
 .carousel ul {
   list-style: none;
@@ -209,13 +246,13 @@ main {
 }
 .fill-footer {
   height: 150px;
+  max-width: 100%;
   background-color: #1a1d29;
 }
 
 footer {
-  height: 30%;
   background-color: #0e0b14;
-  margin-top: 0;
+  margin-top: -100px;
 }
 .footer-img {
   display: flex;
@@ -228,7 +265,7 @@ footer {
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 10px;
+  gap: 8px;
   padding-left: 6px;
 }
 .footer-first-ul a {
@@ -240,21 +277,41 @@ footer {
   letter-spacing: -8%;
 }
 
-@media only screen and (max-width: 428px) {
-  /* .bg {
+@media only screen and (max-width: 450px) {
+  footer {
+    transform: translateY(260px);
+    height: 300px;
+    background-color: #0e0b14;
+    width: 100%;
+  }
+  .footer-img img {
+    margin-top: 20px;
+    width: 94px;
+    height: 38px;
+  }
+  .bg {
     margin-bottom: -46px;
-  } */
+  }
+  .footer-first-ul ul {
+    width: 90%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 8px;
+    margin-left: 7px;
+  }
 }
 
-@media only screen and (min-width: 768px) {
-  /* .bg {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .bg {
     background-size: cover, 100%;
     height: 450px;
-  } */
+  }
 
   .elemental-img img {
-    height: 160px;
-    width: 285px;
+    width: 150.5px;
+    height: 84.66px;
   }
   .descricao {
     margin-top: -30px;
@@ -273,10 +330,22 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* .bg {
-    height: 400px;
-    width: 100vw;
+  .bg-fill {
+    background-color: transparent;
+  }
+  .bg {
+    background-image: unset, unset;
+    background-size: cover, cover;
+  }
+  /* .bg-img {
+    width: 2000px;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
   } */
+  main {
+    background-color: unset;
+  }
 
   .nav-bar {
     margin-top: 10px;
@@ -296,5 +365,16 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .suggest-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    font-weight: 600;
+    font-size: 20.85px;
+    line-height: 31.2px;
+    letter-spacing: 4%;
+    gap: 50px;
   }
 }
